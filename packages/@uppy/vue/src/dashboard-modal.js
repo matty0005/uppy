@@ -1,5 +1,6 @@
 import DashboardPlugin from '@uppy/dashboard'
 import { shallowEqualObjects } from 'shallow-equal'
+import { h } from 'vue'
 
 export default {
   data () {
@@ -68,8 +69,8 @@ export default {
       }
     }
   },
-  render (createElement) {
-    return createElement('div', {
+  render () {
+    return h('div', {
       ref: 'container'
     })
   }
